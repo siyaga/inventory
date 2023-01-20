@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* .container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: nowrap;
+} */
+
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.App-link {
-  color: #61dafb;
+.wrapper {
+  
+  float: left;
+  height: 300px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+}
+.form {
+  float: left;
+  padding: 10px;
+  height: 300px;
+  
+}
+
+.text-input{
+  width: 50%;
+}
+.input-text{
+  width: 50%;
+}
+.insert-date{
+  
+  padding-top: 10px;
+  padding-left: -10px;
+  padding-bottom: 10px;
+}
+.title-insert-date{
+  text-decoration: bold;
+}
+
+.text-checkbox {
+  font-size: 12px;
+}
+
+.text-title {
+  
+  padding-top: 3px;
+  font-weight: bold;
+  font-size: 15px;
+  
+}
+
+.select-edit {
+  border-top: 0.5px solid gray;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.text-default {
+  font-weight: bold;
+}
+.price-all{
+  display: flex;
+  justify-content: flex-end;
+  inset: -20em 73% 40px;
+  writing-mode: horizontal-tb;
+}
+.text-title-price{
+  font-size: 14px;
+}
+.text-include-tax{
+  text-align: left;
 }
